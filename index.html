@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodtuck</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .instagram-media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .instagram-media-container div {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .instagram-media-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <nav>
+        <div class="logo">
+        <h1> Foodtuck</h1>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>The Art of Speed Food Quality</h1>
+            <p>At FoodTuck, we believe that food is more than just a meal—it's an experience!</p>
+            <button><a href="rate-us.html" class="rate-us-button">Rate Us</a></button>
+        </div>
+        <img src="images/mainpic.png" alt="Front Image" class="hero-image">
+    </div>
+</header>
+
+<div id="cookie-notification">
+    <p>We use cookies! <button id="accept-cookie">Accept</button></p>
+</div>
+
+<section class="about-us">
+    <h2>About Us</h2>
+    <p>We Create the best foody product</p>
+    <p>At FoodTuck, we are passionate about bringing people together through great food...</p>
+    <button id="readMoreBtn">Read More</button>
+
+    <div class="about-images">
+        <img src="images/aboutus.png" alt="About Image 1">
+        <img src="images/aboutus2.png" alt="About Image 2">
+        <img src="images/aboutus3.png" alt="About Image 3">
+    </div>
+</section>
+
+<section class="food-category">
+    <h2> Choose Food Item </h2>
+    <div class="food-grid">
+        <div class="food-item">
+            <img src="images/1food.png" alt="Food Item 1">
+            <p>Burgers <br> <br> Juicy, flavorful, and made to perfection</p>
+        </div>
+        <div class="food-item">
+            <img src="images/food2.png" alt="Food Item 2">
+            <p>Pizza <br> <br> Crispy, cheesy, and simply irresistible</p>
+        </div>
+        <div class="food-item">
+            <img src="images/food3.png" alt="Food Item 3">
+            <p>Salads <br> <br> Fresh, healthy, and full of goodness</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <p>Extra ordinary taste and Experienced</p>
+    <p>High-Quality Ingredients – We use only the freshest and finest ingredients to bring out the best flavors in every dish.
+
+       <br> Exceptional Service – Our team is dedicated to making your experience smooth, enjoyable, and unforgettable.
+        
+       <br>
+        Fast & Fresh Delivery – Get your favorite meals delivered hot and fresh, right to your doorstep.</p>
+    <div class="why-choose-grid">
+        <div class="why-choose-item">
+            <img src="images/choosus1.png" alt="Fast Food Icon">
+            <p>Fast Food</p>
+        </div>
+        <div class="why-choose-item">
+            <img src="images/choosus2.png" alt="Lunch Icon">
+            <p>Lunch</p>
+        </div>
+        <div class="why-choose-item">
+            <img src="images/choosus3.png" alt="Dinner Icon">
+            <p>Dinner</p>
+        </div>
+    </div>
+    <p>30+ Years of Experienced</p>
+</section>
+
+<section class="stats">
+    <div class="stat-item">
+        <p>Professional Chefs</p>
+        <p>420</p>
+    </div>
+    <div class="stat-item">
+        <p>Items of Food</p>
+        <p>320</p>
+    </div>
+    <div class="stat-item">
+        <p>Years of Experienced</p>
+        <p>30+</p>
+    </div>
+    <div class="stat-item">
+        <p>Happy Customers</p>
+        <p>220</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h4>About Us</h4>
+            <p>Quality, speed, and taste are our priorities.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: contact@foodtuck.com</p>
+            <p>Phone: +123 456 789</p>
+            <p>Location: Chavchavadze 83, Tbilisi city</p>
+        </div>
+
+        <div class="footer-section social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 Foodtuck. All rights reserved.
+    </div>
+</footer>
+
+
+<button id="scrollToTopBtn">↑</button>
+
+
+
+<script src="js/home.js"></script>
+</body>
+</html>
