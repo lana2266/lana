@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <p>"Absolutely delicious! The flavors were amazing, and the service was outstanding!"</p>
+                <h4>⭐⭐⭐⭐⭐ - Emily R.</h4>
+            </div>
+            <div class="review">
+                <p>"The best food in town! Fresh ingredients and a cozy atmosphere. Highly recommend!"</p>
+                <h4>⭐⭐⭐⭐⭐ - Mark T.</h4>
+            </div>
+            <div class="review">
+                <p>"Loved every bite! Great quality and friendly staff. Will definitely come back!"</p>
+                <h4>⭐⭐⭐⭐⭐ - Sarah L.</h4>
+            </div>
+        </div>
+        <button id="addReviewBtn">Add Your Review</button>
+        <div id="reviewForm" class="hidden">
+            <input type="text" id="reviewText" placeholder="Write your review here...">
+            <input type="text" id="reviewerName" placeholder="Your Name">
+            <button onclick="submitReview()">Submit</button>
+        </div>
+    </section>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

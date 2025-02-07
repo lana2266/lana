@@ -1,0 +1,84 @@
+
+body {
+    background-color: #222; 
+    font-family: sans-serif;
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.reviews-section {
+    background-color: #222; 
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: white;
+}
+
+h2 {
+    color: white; 
+}
+
+
+.reviews-container {
+    margin-top: 20px;
+}
+
+
+.review {
+    background-color: gray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+
+h4 {
+    margin-top: 10px;
+    color: wheat; 
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #FF9900; 
+    border: none;
+    color: white; 
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #E68A00; 
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+#reviewForm {
+    margin-top: 20px;
+}
+
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: #333; 
+}
+
+input::placeholder {
+    color: #bbb; 
+}

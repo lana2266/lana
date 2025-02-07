@@ -1,0 +1,112 @@
+/* ძირითადი სტილები */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ff9800;
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #e68900;
+    padding: 5px;
+}
+
+.star.selected {
+    color: gold;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+}
+
+select {
+    padding: 8px;
+    width: 90%;
+    background-color: #222;
+    color: white;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.confirmation-message {
+    color: lightgreen;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.star-rating {
+    font-size: 30px;
+    color: #e68900;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.star-rating .star:hover {
+    color: gold;
+}
+
+
+.star-rating .star.selected {
+    transition: color 0.2s ease-in-out;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.confirmation-message {
+    font-size: 18px;
+    color: lightgreen;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}

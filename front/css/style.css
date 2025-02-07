@@ -1,0 +1,609 @@
+/* სტილების რესეტი*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'lora', serif;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600;
+    font-size: 16px;  
+    transition: color 0.3s ease;
+}
+
+
+a:hover {
+    color: #f39c12;  
+}
+
+a.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* ჰედერი და ნავიგაცია */
+header {
+    background-color: #222;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #eee;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    font-weight: bold;
+    font-size: 14px;
+    color: orange;
+}
+
+/* ჰირო სექცია*/
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: orange;
+}
+.rate-us-button {
+    background-color: #333;
+    color: white;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    max-width: 100%;
+}
+
+/* ებაუთ აზ სექცია*/
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-images img {
+    max-width: 100%;
+}
+
+/* ფუდ კატეგორიის სექცეია */
+.food-category {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.food-item {
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* ვაი ჩუზ ას სექცია */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.why-choose-item {
+    text-align: center;
+}
+
+.why-choose-item img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* სთათს სექცია */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+/* შეფს სექცია */
+.chefs {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.chef-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chef-item {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chef-item img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.chef-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+/* why choose us section */
+
+.why-choose-us {
+    background-color: #111;
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: white;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.why-choose-us p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.why-choose-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.why-choose-item {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.why-choose-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.why-choose-item p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.why-choose-item:hover {
+    transform: translateY(-8px);
+}
+
+/* Stats Section */
+.stats {
+    background-color: #222;
+    color: white;
+    font-weight: normal;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.stat-item {
+    background: #2222;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.stat-item p:last-child {
+
+    font-size: 1.5rem;
+    color: #f0a500;
+}
+
+.stat-item:hover {
+    transform: scale(1.1);
+}
+
+/* ფუტერ სექცია */
+footer {
+    background-color: #333;
+    padding: 80px 10%;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h4 {
+    font-size: 1.5rem;
+    color: #f0a500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f0a500;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #444;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #f0a500;
+    transform: scale(1.1);
+}
+
+
+.social-icons a:nth-child(1) { background: #3b5998; } /* Facebook */
+.social-icons a:nth-child(2) { background: #1DA1F2; } /* Twitter */
+.social-icons a:nth-child(3) { background: #E4405F; } /* Instagram */
+.social-icons a:nth-child(4) { background: #0077B5; } /* LinkedIn */
+.social-icons a:nth-child(5) { background: #FF0000; } /* YouTube */
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    font-size: 1.2rem;
+}
+
+/* ბლოგ სექცია */
+.blog-section {
+    padding: 80px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    color: #f0a500;
+    margin-bottom: 10px;
+}
+
+.blog-section .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card .card-content {
+    padding: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.3rem;
+    color: #f0a500;
+    margin: 10px 0;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    color: orange;
+    line-height: 1.5;
+}
+
+.blog-card a {
+    display: inline-block;
+    color: #f0a500;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.blog-card a:hover {
+    text-decoration: none;
+}
+
+/* ქუქის შეტყობინება */
+#cookie-notification {
+    background-color: #333;
+    color: orange;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+#cookie-notification button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* რესფონსივის სტილები */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .food-grid, .why-choose-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .food-grid {
+        flex-direction: column;
+    }
+
+    .food-item img {
+        width: 100%;
+    }
+
+    .chef-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo img {
+        width: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+

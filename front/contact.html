@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+        <form id="contact-form" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="input-group password-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span class="eye-icon" id="eye-icon" onclick="togglePassword()"> 👁️ </span>
+                </div>
+                <span class="error-message" id="password-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit">Send Message</button>
+            <p id="form-message"></p>
+        </form>
+    </section>
+
+<script src="contact.js"></script>
+<script>
+
+    function validateForm() {
+        let isValid = true;
+
+        
+        let name = document.getElementById("name").value;
+        let nameError = document.getElementById("name-error");
+        if (name === "") {
+            nameError.textContent = "Name is required.";
+            isValid = false;
+        } else {
+            nameError.textContent = "";
+        }
+
+        
+        let email = document.getElementById("email").value;
+        let emailError = document.getElementById("email-error");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            emailError.textContent = "Email is required.";
+            isValid = false;
+        } else if (!emailRegex.test(email)) {
+            emailError.textContent = "Please enter a valid email.";
+            isValid = false;
+        } else {
+            emailError.textContent = "";
+        }
+
+        
+        let password = document.getElementById("password").value;
+        let passwordError = document.getElementById("password-error");
+        if (password === "") {
+            passwordError.textContent = "Password is required.";
+            isValid = false;
+        } else if (password.length < 6) {
+            passwordError.textContent = "Password must be at least 6 characters long.";
+            isValid = false;
+        } else {
+            passwordError.textContent = "";
+        }
+
+        
+        let message = document.getElementById("message").value;
+        let messageError = document.getElementById("message-error");
+        if (message === "") {
+            messageError.textContent = "Message is required.";
+            isValid = false;
+        } else {
+            messageError.textContent = "";
+        }
+
+        return isValid;  
+    }
+</script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>
+
+
+
